@@ -1,0 +1,49 @@
+# Tenth House Studio — Apache config (most Indian shared hosts / WordPress hosts use Apache)
+
+ErrorDocument 404 /404.html
+
+# Force HTTPS and the non-www domain (matches the current canonical URL)
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://tenthhousestudio.com%{REQUEST_URI} [L,R=301]
+
+# 301 redirects from the old WordPress URLs so search rankings carry over
+Redirect 301 /services/               /services.html
+Redirect 301 /family-portraits/       /services.html#family
+Redirect 301 /newborn-photography/    /services.html#newborn
+Redirect 301 /children-portraiture/   /services.html#children
+Redirect 301 /maternity-portraits/    /services.html#maternity
+Redirect 301 /couple-portraiture/     /services.html#couple
+Redirect 301 /solo-portraiture/       /services.html#solo
+Redirect 301 /in-the-box-photography/ /services.html#inthebox
+Redirect 301 /corporate-headshots/    /services.html#headshots
+Redirect 301 /about-us/               /about.html
+Redirect 301 /contact/                /contact.html
+# NOTE: /shop/, /blog/ and the legal pages are still linked from the footer.
+# Keep WordPress serving those paths, or move them before removing WordPress.
+
+# Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/json
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Keep the build tools private
+RedirectMatch 404 ^/tools/

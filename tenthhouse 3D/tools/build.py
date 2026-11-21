@@ -275,6 +275,16 @@ def head(title: str, desc: str, path: str, og_img: str, extra: str = "", body_cl
 <div class="loader" aria-hidden="true">
   <div class="loader__half loader__half--t"></div><div class="loader__half loader__half--b"></div>
   <div class="loader__card">
+    <div class="loader__logo">
+      <svg class="loader__ring" viewBox="0 0 200 200" aria-hidden="true">
+        <circle class="lr-track" cx="100" cy="100" r="92"/>
+        <circle class="lr-draw" cx="100" cy="100" r="92" pathLength="100"/>
+        <circle class="lr-ticks" cx="100" cy="100" r="84" pathLength="120"/>
+      </svg>
+      <span class="loader__glow"></span>
+      <img src="{STUDIO['logo_icon']}" alt="" width="1376" height="977" decoding="async" fetchpriority="high">
+      <span class="loader__shine"></span>
+    </div>
     <span class="mono">Manikonda · Hyderabad · Est. 2023</span>
     <div class="loader__title">Tenth House Studio</div>
     <div class="loader__sub">presents</div>
