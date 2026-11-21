@@ -236,6 +236,7 @@ def jsonld_business() -> str:
 # layout
 # --------------------------------------------------------------------------
 def head(title: str, desc: str, path: str, og_img: str, extra: str = "", body_class: str = "") -> str:
+    og_img = STUDIO["logo_icon"]  # share previews (WhatsApp, Instagram, Facebook) show the studio logo
     body_attr = f' class="{body_class}"' if body_class else ""
     canonical = SITE_URL + ("" if path == "index.html" else path)
     return f"""<!doctype html>
@@ -253,8 +254,9 @@ def head(title: str, desc: str, path: str, og_img: str, extra: str = "", body_cl
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:image" content="{og_img}">
+<meta property="og:image:alt" content="Tenth House Studio logo">
 <meta property="og:locale" content="en_IN">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(desc)}">
 <meta name="twitter:image" content="{og_img}">
