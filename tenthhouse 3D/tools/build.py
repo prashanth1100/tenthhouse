@@ -156,11 +156,15 @@ CATEGORIES = [  # portfolio filters, mapped to the Portraits service group
     ("headshots", "Headshots"), ("events", "Events"), ("campaigns", "Campaigns"),
 ]
 
-PORTFOLIO_ORDER = ["nbx7", "solox1", "nb1", "nbx14", "kid1", "fam2", "ch3", "kid13", "mat2", "cp1", "ch2", "so3", "fam4", "nb2", "ch4",
-                   "cp2", "fam1", "ch6", "so1", "mat1", "hero", "ch5", "fam3", "nb3", "ch1",
-                   "so2", "fam6", "ch7", "box1", "fam5", "ch8",
-                   "camp4", "bday2", "camp7", "camp1", "bday1", "camp5", "camp3", "camp6", "camp2",
-                   "mat17", "nbx6", "mat12", "nbx16", "kid1", "kid13", "mat11", "kid6", "kid9", "kid11", "kid16", "kid2", "kid10", "kid7", "kid4", "kid17", "kid12", "kid3", "kid8", "kid14", "kid5", "kid15", "mat15", "nbx13", "mat19", "nbx10", "nbx1", "nbx2", "nbx12", "nbx8", "hs3", "fam8", "mat13", "hs1", "evt1", "fam9", "hs5", "fam7", "hs6", "fam11", "hs2", "fam10", "nbx3", "nbx4", "nbx5", "nbx9", "nbx11", "nbx15", "nbx17", "nbx18", "mat14", "hs4", "mat16", "mat18"]
+PORTFOLIO_ORDER = [  # newest studio photos first
+    "nbx7", "solox1", "nbx14", "kid1", "kid13", "camp4", "bday2", "camp7", "camp1", "bday1", "camp5", "camp3",
+    "camp6", "camp2", "mat17", "nbx6", "mat12", "nbx16", "mat11", "kid6", "kid9", "kid11", "kid16", "kid2",
+    "kid10", "kid7", "kid4", "kid17", "kid12", "kid3", "kid8", "kid14", "kid5", "kid15", "mat15", "nbx13",
+    "mat19", "nbx10", "nbx1", "nbx2", "nbx12", "nbx8", "hs3", "fam8", "mat13", "hs1", "evt1", "fam9",
+    "hs5", "fam7", "hs6", "fam11", "hs2", "fam10", "nbx3", "nbx4", "nbx5", "nbx9", "nbx11", "nbx15",
+    "nbx17", "nbx18", "mat14", "hs4", "mat16", "mat18", "nb1", "fam2", "ch3", "mat2", "cp1", "ch2",
+    "so3", "fam4", "nb2", "ch4", "cp2", "fam1", "ch6", "so1", "mat1", "hero", "ch5", "fam3",
+    "nb3", "ch1", "so2", "fam6", "ch7", "box1", "fam5", "ch8"]
 
 def missing(desc: str) -> dict:
     return {"missing": desc}
@@ -396,7 +400,7 @@ def header(active: str) -> str:
 </div>
 """
 
-FOOT_STRIP = ['nbx7', 'solox1', 'camp4', 'nbx16', 'hs3', 'bday2', 'fam8', 'evt1', 'nb1', 'camp7', 'fam2', 'cp2', 'mat17', 'kid1', 'mat12', 'ch3', 'kid9', 'mat2', 'so3', 'fam4', 'ch2', 'cp1', 'ch4', 'fam5', 'so1']
+FOOT_STRIP = ['nbx7', 'solox1', 'camp4', 'nbx16', 'hs3', 'bday2', 'fam8', 'evt1', 'camp7', 'mat17', 'kid1', 'mat12', 'kid9', 'nb1', 'fam2', 'cp2', 'ch3', 'mat2', 'so3', 'fam4', 'ch2', 'cp1', 'ch4', 'fam5', 'so1']
 
 WA_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm5.8 14.08c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.14-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.25-.27.54-.34.72-.34h.52c.17 0 .39-.06.61.47.24.56.79 1.93.86 2.07.07.14.12.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.12.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></svg>'
 
@@ -534,36 +538,38 @@ WHY = [
     ("sofa", "A comfortable experience", "A relaxed, welcoming space and flexible scheduling, so everyone — even the little ones — enjoys the shoot."),
 ]
 
-PROJECTS = [  # real photographs from the studio, titled by what they show
+PROJECTS = [  # real photographs from the studio, newest first
     ("camp7", "Temple of dance", "Campaign", "campaigns"),
     ("bday2", "Turning four", "Birthday", "events"),
+    ("nbx16", "Little Murugan", "Newborn", "newborn"),
+    ("fam8", "Silk &amp; red curtains", "Family", "family"),
+    ("mat17", "Teal nauvari, golden light", "Maternity", "maternity"),
+    ("kid7", "In pattu langa", "Children", "children"),
+    ("hs3", "The executive", "Headshot", "headshots"),
+    ("camp4", "White, denim &amp; orange", "Campaign", "campaigns"),
     ("nb1", "A newborn among sunflowers", "Newborn", "newborn"),
-    ("fam2", "Silk &amp; celebration", "Family", "family"),
     ("cp2", "Under the full moon", "Couple", "couple"),
-    ("ch3", "The little officer", "Children", "children"),
-    ("mat2", "Waiting for you", "Maternity", "maternity"),
     ("so3", "The classical dancer", "Solo portrait", "solo"),
-    ("cp1", "Golden hour, indoors", "Couple", "couple"),
 ]
 
 SCENES = [  # (image, chapter label, title html, line, portfolio category)
-    ("nb1", "Newborn Photography", "The first <em>days.</em>", "Fleeting, tender and gone too soon — the innocence of your baby’s first days, kept for a lifetime.", "newborn"),
-    ("fam2", "Family Portraits", "Where you <em>belong.</em>", "Portraits that strengthen bonds and give everyone a sense of belonging every time they pass them on the wall.", "family"),
+    ("nbx1", "Newborn Photography", "The first <em>days.</em>", "Fleeting, tender and gone too soon — the innocence of your baby’s first days, kept for a lifetime.", "newborn"),
+    ("fam8", "Family Portraits", "Where you <em>belong.</em>", "Portraits that strengthen bonds and give everyone a sense of belonging every time they pass them on the wall.", "family"),
     ("cp2", "Couple Portraits", "Two of <em>you.</em>", "The love, connection and shared moments of your relationship — at any stage of life.", "couple"),
-    ("ch3", "Children Portraits", "Little <em>legends.</em>", "Every stage of growing up, photographed playfully so children enjoy it and leave a little more confident.", "children"),
-    ("so3", "Solo Portraits", "Simply <em>you.</em>", "A portrait that celebrates your personality and your moment in time.", "solo"),
-    ("mat2", "Maternity", "Waiting for <em>you.</em>", "The beauty and strength of motherhood, made while you wait for your little one to arrive.", "maternity"),
+    ("kid13", "Children Portraits", "Little <em>legends.</em>", "Every stage of growing up, photographed playfully so children enjoy it and leave a little more confident.", "children"),
+    ("solox1", "Solo Portraits", "Simply <em>you.</em>", "A portrait that celebrates your personality and your moment in time.", "solo"),
+    ("mat17", "Maternity", "Waiting for <em>you.</em>", "The beauty and strength of motherhood, made while you wait for your little one to arrive.", "maternity"),
 ]
 
 def build_home():
-    slides = [("hero", "Newborn"), ("fam2", "Family"), ("cp1", "Couple"), ("ch3", "Children"), ("so3", "Solo portrait")]
+    slides = [("nbx14", "Newborn"), ("fam8", "Family"), ("mat17", "Maternity"), ("kid13", "Children"), ("solox1", "Solo portrait"), ("cp1", "Couple")]
     slide_html = "".join(
         f'<div class="slide{" is-active" if n == 0 else ""}" data-label="{lbl}">{img(i, "100vw", eager=(n == 0))}</div>'
         for n, (i, lbl) in enumerate(slides))
     dots = "".join(f'<button type="button" aria-label="Show {lbl} photo">{n+1:02d}</button>' for n, (_, lbl) in enumerate(slides))
     mq = "".join(f"<span>{s['name']}</span>" for s in ALL_SERVICES)
 
-    second = {"nb1": "nb2", "fam2": "fam4", "cp2": "cp1", "ch3": "ch2", "so3": "so1", "mat2": "mat1"}
+    second = {"nbx1": "nbx7", "fam8": "fam11", "cp2": "cp1", "kid13": "kid9", "solox1": "so3", "mat17": "mat12"}
     scenes = ""
     for k, (i, label, title, line, cat) in enumerate(SCENES):
         svc = label if label != "Maternity" else "Maternity Portraits"
