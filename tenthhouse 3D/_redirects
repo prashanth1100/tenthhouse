@@ -1,0 +1,13 @@
+# Netlify redirects — old WordPress URLs keep their search rankings
+/services/                /services.html             301
+/family-portraits/        /services.html#family      301
+/newborn-photography/     /services.html#newborn     301
+/children-portraiture/    /services.html#children    301
+/maternity-portraits/     /services.html#maternity   301
+/couple-portraiture/      /services.html#couple      301
+/solo-portraiture/        /services.html#solo        301
+/in-the-box-photography/  /services.html#inthebox    301
+/corporate-headshots/     /services.html#headshots   301
+/about-us/                /about.html                301
+/contact/                 /contact.html              301
+/tools/*                  /404.html                  404

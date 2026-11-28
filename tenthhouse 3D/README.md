@@ -59,7 +59,15 @@ python3 tools/build.py           # pages now use local JPEGs, with WebP served f
 
 For AVIF as well, convert the downloaded files (e.g. with `avifenc`) and extend the `<picture>` logic in `img()`.
 
-## Deploy
+## Deploy on Netlify (recommended for sharing)
+
+1. Go to https://app.netlify.com/drop and drag the whole `tenthhouse` folder onto the page — you get a live `*.netlify.app` link.
+2. Create a free Netlify account / claim the site so the link stays permanent.
+3. In the site's dashboard: **Forms → Enable form detection**, then drag the folder in again once so the enquiry form is detected. Enquiries then appear under Forms (turn on email notifications there).
+4. To update later: open the site → **Deploys** → drag the updated folder into the drop area.
+`_redirects` already carries the old WordPress URLs over. (`contact.php` and `.htaccess` are only used on PHP/Apache hosting and are ignored by Netlify.)
+
+## Deploy on a PHP/Apache host (alternative)
 
 1. Upload everything **except `tools/`** to the web root (any Apache/PHP host — the current WordPress host works).
 2. `.htaccess` adds HTTPS + non-www redirects, **301 redirects from every old WordPress URL**, caching and security headers.
@@ -122,11 +130,3 @@ Shown on the site as labelled `[MISSING: …]` placeholders:
 10. **Instagram link** — the brief asks for Instagram in the footer/CTA, but the current site doesn't publish one. Add it to `STUDIO["instagram"]` in `tools/build.py` and rebuild; it then appears automatically. (A live Instagram feed also needs an Instagram API token or an embed widget.)
 11. **More testimonials**, with permission
 12. **Original full-resolution photos.** WordPress resized them to max 2560 px, which is fine, but originals let us export sharper WebP/AVIF.
-
-## 3D layer
-
-`assets/js/three-d.js` + `assets/css/three-d.css` add the 3D/premium motion: WebGL bokeh light field
-in the hero, a 3D camera-aperture on page heroes and the 404 page, mouse-driven hero depth, 3D tilt
-cards with glare, scroll-scrubbed 3D reveals, a cover-flow project reel, 3D testimonial flips,
-an extruded footer word and a custom cursor. No libraries. Everything switches off for visitors
-who prefer reduced motion. Both files are linked from `tools/build.py`, so rebuilding keeps them.

@@ -301,8 +301,16 @@
       };
 
       if (location.protocol === "file:") { fail(); return; }
-      fetch(form.action, { method: "POST", body: data, headers: { "Accept": "application/json" } })
-        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+      var netlify = form.hasAttribute("data-netlify");
+      var req = netlify
+        // Netlify Forms: URL-encoded POST to a static path
+        ? fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(Array.from(data.entries()).filter(function (p) { return p[0] !== "elapsed"; })).toString() })
+            .then(function (r) { return { ok: r.ok, j: { ok: r.ok } }; })
+        // PHP hosting: contact.php returns JSON
+        : fetch("contact.php", { method: "POST", body: data, headers: { "Accept": "application/json" } })
+            .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); });
+      req
         .then(function (res) {
           if (!res.ok || !res.j.ok) throw new Error((res.j && res.j.error) || "error");
           status.className = "form-status is-success";

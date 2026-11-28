@@ -80,17 +80,87 @@ IMAGES = {
     "so2":        ("2024/06/DSC00366-Enhanced-SR-2-2", ["703x1024", "768x1118", "1055x1536", "1407x2048"], "Man in a hoodie and jeans seated on a stool against a teal backdrop", "solo", "Solo portrait"),
     "so3":        ("2024/06/R2", V_23, "Classical dancer in traditional costume and stage make-up against black", "solo", "Solo portrait"),
     "box1":       ("2024/06/instagram-in-the-box-post", V_SQ, "Grid of in-the-box portraits of a child posing inside white cubes", "inthebox", "In The Box"),
+    # studio-supplied photos (Nov 2026)
+    "bday1": ("assets/photos/new/bday1", ["800x533", "1400x933", "2000x1332"], "Family of four behind a birthday cake at a green and gold balloon first-birthday setup", "events", "Birthday"),
+    "bday2": ("assets/photos/new/bday2", ["800x1200", "1400x2100", "2000x3000"], "Girl in a pale blue gown at her fourth birthday, with pink and gold balloons", "events", "Birthday"),
+    "camp1": ("assets/photos/new/camp1", ["800x1200", "1400x2100"], "Three people in white tees and denim chatting on a grey studio backdrop", "campaigns", "Campaign"),
+    "camp2": ("assets/photos/new/camp2", ["800x1200", "1400x2100"], "Campaign trio in white and denim mid-conversation in the studio", "campaigns", "Campaign"),
+    "camp3": ("assets/photos/new/camp3", ["800x1200", "1400x2099"], "Campaign trio posing together in sunglasses, white tees and an orange top", "campaigns", "Campaign"),
+    "camp4": ("assets/photos/new/camp4", ["800x1200", "1400x2100", "2000x3000"], "Three models in white and denim, the woman in an orange top, posing on a warm backdrop", "campaigns", "Campaign"),
+    "camp5": ("assets/photos/new/camp5", ["800x1200", "1400x2100", "2000x3000"], "Campaign trio laughing in warm studio light", "campaigns", "Campaign"),
+    "camp6": ("assets/photos/new/camp6", ["800x1200", "1400x2100", "2000x3000"], "Campaign trio in white tees and jeans looking up, on a grey backdrop", "campaigns", "Campaign"),
+    "camp7": ("assets/photos/new/camp7", ["800x1029", "1400x1800", "2000x2571"], "Three classical dancers in traditional costume posing before a temple backdrop", "campaigns", "Campaign"),
+    "evt1": ("assets/photos/new/evt1", ["800x533", "1400x933", "2000x1333"], "Two families with their children on a stage decorated with a floral arch", "events", "Event"),
+    "fam7": ("assets/photos/new/fam7", ["800x1200", "1400x2100", "2000x3000"], "Father seated on a stool with his young son on his lap, both in black", "family", "Family portrait"),
+    "fam8": ("assets/photos/new/fam8", ["800x1120", "1400x1960", "2000x2800"], "Parents and their son seated before red curtains, the mother in a purple silk saree", "family", "Family portrait"),
+    "fam9": ("assets/photos/new/fam9", ["800x1200", "1400x2100"], "Parents with their two daughters on a grey backdrop, the baby on her mother's lap", "family", "Family portrait"),
+    "fam10": ("assets/photos/new/fam10", ["800x1200", "1400x2099"], "Smiling father with his young son hugging him from behind", "family", "Family portrait"),
+    "fam11": ("assets/photos/new/fam11", ["800x1200", "1400x2100"], "Mother in a silk saree holding her baby in a yellow dress beside the father on a stool", "family", "Family portrait"),
+    "hs1": ("assets/photos/new/hs1", ["800x1084", "1400x1897"], "Business headshot of a man in a white checked shirt, arms crossed, on a dark grey backdrop", "headshots", "Business headshot"),
+    "hs2": ("assets/photos/new/hs2", ["800x1200", "1400x2100"], "Man in a white shirt and navy trousers seated on a black chair against dark grey", "headshots", "Business headshot"),
+    "hs3": ("assets/photos/new/hs3", ["800x1200", "1400x2100"], "Executive in a navy pinstripe three-piece suit and red tie beside a chair", "headshots", "Business headshot"),
+    "hs4": ("assets/photos/new/hs4", ["800x1184", "1400x2073"], "Full-length portrait of an executive in a pinstripe suit leaning on a chair", "headshots", "Business headshot"),
+    "hs5": ("assets/photos/new/hs5", ["800x1200", "1400x2100"], "Young professional woman in a charcoal blazer on a light grey backdrop", "headshots", "Business headshot"),
+    "hs6": ("assets/photos/new/hs6", ["800x1200", "1400x2100", "2000x3000"], "Man in a cream blazer over a black shirt on a warm grey backdrop", "headshots", "Business headshot"),
+    "kid1": ("assets/photos/new/kid1", ["800x1120", "1400x1960"], "Laughing baby in a brown striped sweatshirt biting a red apple", "children", "Children"),
+    "kid2": ("assets/photos/new/kid2", ["800x1200", "1400x2100"], "Curly-haired baby in a striped top lying on his tummy, looking up wide-eyed", "children", "Children"),
+    "kid3": ("assets/photos/new/kid3", ["800x1127", "1400x1973"], "Smiling baby in denim dungarees sitting against a white brick wall", "children", "Children"),
+    "kid4": ("assets/photos/new/kid4", ["800x1200", "1400x2100"], "Big sister holding her baby sister on her lap on a stool", "children", "Children"),
+    "kid5": ("assets/photos/new/kid5", ["800x533", "1400x933", "2000x1333"], "Sisters playing with toy fruit on a grey backdrop", "children", "Children"),
+    "kid6": ("assets/photos/new/kid6", ["800x1200", "1400x2100"], "Two sisters holding sprigs of red blossom beside a vintage radio", "children", "Children"),
+    "kid7": ("assets/photos/new/kid7", ["800x1200", "1400x2100", "2000x3000"], "Girl in an orange silk pattu langa perched on a wooden stool", "children", "Children"),
+    "kid8": ("assets/photos/new/kid8", ["800x533", "1400x933", "2000x1333"], "Sisters in traditional silk langas seated on a textured backdrop", "children", "Children"),
+    "kid9": ("assets/photos/new/kid9", ["800x1200", "1400x2100", "2000x3000"], "Toddler in a pink blouse and mint langa dancing with one arm outstretched", "children", "Children"),
+    "kid10": ("assets/photos/new/kid10", ["800x533", "1400x933", "2000x1333"], "Two sisters lying head to head on a pink fur blanket, smiling", "children", "Children"),
+    "kid11": ("assets/photos/new/kid11", ["800x533", "1400x933", "2000x1333"], "Toddler in red round sunglasses climbing onto a cane chair", "children", "Children"),
+    "kid12": ("assets/photos/new/kid12", ["800x1200", "1400x2100", "2000x3000"], "Toddler peeking over red sunglasses beside a cane chair on a blue backdrop", "children", "Children"),
+    "kid13": ("assets/photos/new/kid13", ["800x1200", "1400x2100", "2000x3000"], "Girl in a lime polka-dot dress and denim jacket striking a pose under window light", "children", "Children"),
+    "kid14": ("assets/photos/new/kid14", ["800x533", "1400x933", "2000x1333"], "Baby boy with a toy police car among potted plants", "children", "Children"),
+    "kid15": ("assets/photos/new/kid15", ["800x533", "1400x933", "2000x1333"], "Close-up of a baby’s hands on a toy police car on green grass", "children", "Children"),
+    "kid16": ("assets/photos/new/kid16", ["800x533", "1400x933", "2000x1333"], "Baby in a sailor outfit on a nautical set with lighthouses and boats", "children", "Children"),
+    "kid17": ("assets/photos/new/kid17", ["800x533", "1400x933", "2000x1333"], "Baby crawling on a boho first-birthday set with a vintage radio", "children", "Children"),
+    "mat11": ("assets/photos/new/mat11", ["800x1200", "1400x2099"], "Expecting couple in a pink silk saree and printed kurta before a lotus-pond backdrop", "maternity", "Maternity"),
+    "mat12": ("assets/photos/new/mat12", ["800x1198", "1400x2097"], "Black and white silhouette of an expecting couple, foreheads touching", "maternity", "Maternity"),
+    "mat13": ("assets/photos/new/mat13", ["800x1198", "1400x2097"], "Black and white double exposure of a mother-to-be with the couple embracing", "maternity", "Maternity"),
+    "mat14": ("assets/photos/new/mat14", ["800x1120", "1400x1960"], "Expecting couple dressed in black, one seated on a stool, on a white backdrop", "maternity", "Maternity"),
+    "mat15": ("assets/photos/new/mat15", ["800x1028", "1400x1799", "2000x2571"], "Mother-to-be in a striped dress in profile inside a silver floral ring on black", "maternity", "Maternity"),
+    "mat16": ("assets/photos/new/mat16", ["800x1200", "1400x2100", "2000x3000"], "Mother-to-be in a cream and gold silk saree with her young son beside a painted landscape", "maternity", "Maternity"),
+    "mat17": ("assets/photos/new/mat17", ["800x1164", "1400x2037", "2000x2911"], "Mother-to-be in a teal nauvari saree, the pallu flying, under a golden garland", "maternity", "Maternity"),
+    "mat18": ("assets/photos/new/mat18", ["800x1200", "1400x2100", "2000x3000"], "Expecting parents and their son in matching maroon, the mother seated in a silk saree", "maternity", "Maternity"),
+    "mat19": ("assets/photos/new/mat19", ["800x1163", "1400x2036", "2000x2908"], "Mother-to-be in a green silk saree seated before a painted peacock arch", "maternity", "Maternity"),
+    "nbx1": ("assets/photos/new/nbx1", ["800x1200", "1400x2100"], "Parents touching foreheads while cradling their sleeping newborn on a white backdrop", "newborn", "Newborn"),
+    "nbx2": ("assets/photos/new/nbx2", ["800x533", "1400x933", "2000x1333"], "Baby wrapped in mustard fabric on a rope swing, holding a crochet bear", "newborn", "Newborn"),
+    "nbx3": ("assets/photos/new/nbx3", ["800x553", "1400x968", "2000x1384"], "Sleeping baby in a yellow shirt holding a bunch of felt balloons", "newborn", "Newborn"),
+    "nbx4": ("assets/photos/new/nbx4", ["800x556", "1400x973", "2000x1390"], "Baby on a red backdrop with a clapperboard and a number two drawn in popcorn", "newborn", "Newborn"),
+    "nbx5": ("assets/photos/new/nbx5", ["800x1155", "1400x2020"], "Newborn curled asleep under a dusty-pink knit wrap", "newborn", "Newborn"),
+    "nbx6": ("assets/photos/new/nbx6", ["800x533", "1400x933", "2000x1333"], "Newborn on mustard fabric holding a parent’s finger in each hand", "newborn", "Newborn"),
+    "nbx7": ("assets/photos/new/nbx7", ["800x533", "1400x933", "2000x1333"], "Newborn curled in a heart made by a parent’s hands on mustard fabric", "newborn", "Newborn"),
+    "nbx8": ("assets/photos/new/nbx8", ["800x1200", "1400x2100", "2000x3000"], "A newborn’s tiny foot resting in a parent’s open palm on black", "newborn", "Newborn"),
+    "nbx9": ("assets/photos/new/nbx9", ["800x530", "1400x927", "2000x1325"], "Wide-eyed newborn in a pink wrap on a rope swing against purple", "newborn", "Newborn"),
+    "nbx10": ("assets/photos/new/nbx10", ["800x533", "1400x933", "2000x1333"], "Yawning newborn in a green wrap holding felt balloons", "newborn", "Newborn"),
+    "nbx11": ("assets/photos/new/nbx11", ["800x1200", "1400x2100", "2000x3000"], "Smiling parents holding their swaddled newborn against a red backdrop", "newborn", "Newborn"),
+    "nbx12": ("assets/photos/new/nbx12", ["800x1187", "1400x2077", "2000x2968"], "Mother nose to nose with her swaddled newborn on a red backdrop", "newborn", "Newborn"),
+    "nbx13": ("assets/photos/new/nbx13", ["800x1156", "1400x2023", "2000x2889"], "Newborn girl asleep in a wooden ring bed with ivy and red blossoms", "newborn", "Newborn"),
+    "nbx14": ("assets/photos/new/nbx14", ["800x1200", "1400x2100", "2000x3000"], "Parents with foreheads together holding their wide-eyed newborn", "newborn", "Newborn"),
+    "nbx15": ("assets/photos/new/nbx15", ["800x1200", "1400x2100", "2000x3000"], "Newborn held up between her parents, looking around wide-eyed", "newborn", "Newborn"),
+    "nbx16": ("assets/photos/new/nbx16", ["800x533", "1400x933", "2000x1333"], "Newborn in saffron with rudraksha beads and a golden vel on a flower-shaped bed", "newborn", "Newborn"),
+    "nbx17": ("assets/photos/new/nbx17", ["800x533", "1400x933", "2000x1333"], "Baby tucked under an orange blanket with a crochet bee toy", "newborn", "Newborn"),
+    "nbx18": ("assets/photos/new/nbx18", ["800x533", "1400x933", "2000x1333"], "Swaddled newborn in a green fur nest surrounded by white stars and tulips", "newborn", "Newborn"),
+    "solox1": ("assets/photos/new/solox1", ["800x1197", "1400x2096"], "Bharatanatyam dancer in a blue and pink costume mid-pose against a dark backdrop", "solo", "Solo portrait"),
     "avatar_st":  ("2025/09/Untitled-2", ["300x300", "600x600"], "Sai Teja Ravutu", None, ""),
 }
 
 CATEGORIES = [  # portfolio filters, mapped to the Portraits service group
     ("newborn", "Newborn"), ("maternity", "Maternity"), ("children", "Children"),
     ("family", "Family"), ("couple", "Couples"), ("solo", "Solo"), ("inthebox", "In The Box"),
+    ("headshots", "Headshots"), ("events", "Events"), ("campaigns", "Campaigns"),
 ]
 
-PORTFOLIO_ORDER = ["nb1", "fam2", "ch3", "mat2", "cp1", "ch2", "so3", "fam4", "nb2", "ch4",
+PORTFOLIO_ORDER = ["nbx7", "solox1", "nb1", "nbx14", "kid1", "fam2", "ch3", "kid13", "mat2", "cp1", "ch2", "so3", "fam4", "nb2", "ch4",
                    "cp2", "fam1", "ch6", "so1", "mat1", "hero", "ch5", "fam3", "nb3", "ch1",
-                   "so2", "fam6", "ch7", "box1", "fam5", "ch8"]
+                   "so2", "fam6", "ch7", "box1", "fam5", "ch8",
+                   "camp4", "bday2", "camp7", "camp1", "bday1", "camp5", "camp3", "camp6", "camp2",
+                   "mat17", "nbx6", "mat12", "nbx16", "kid1", "kid13", "mat11", "kid6", "kid9", "kid11", "kid16", "kid2", "kid10", "kid7", "kid4", "kid17", "kid12", "kid3", "kid8", "kid14", "kid5", "kid15", "mat15", "nbx13", "mat19", "nbx10", "nbx1", "nbx2", "nbx12", "nbx8", "hs3", "fam8", "mat13", "hs1", "evt1", "fam9", "hs5", "fam7", "hs6", "fam11", "hs2", "fam10", "nbx3", "nbx4", "nbx5", "nbx9", "nbx11", "nbx15", "nbx17", "nbx18", "mat14", "hs4", "mat16", "mat18"]
 
 def missing(desc: str) -> dict:
     return {"missing": desc}
@@ -100,19 +170,19 @@ SERVICE_GROUPS = [
         "id": "portraits", "name": "Portraits",
         "intro": "Classic studio portraiture is where Tenth House began, and still the heart of the studio — timeless, authentic images that show who you are.",
         "services": [
-            {"id": "newborn", "name": "Newborn Photography", "imgs": ["nb1", "nb2"],
+            {"id": "newborn", "name": "Newborn Photography", "imgs": ["nbx7", "nbx14"],
              "desc": "A newborn session captures the fleeting first days — the innocence of your baby and the joy of welcoming a new family member — as a keepsake your family will return to for years."},
-            {"id": "maternity", "name": "Maternity Portraits", "imgs": ["mat1", "mat2"],
+            {"id": "maternity", "name": "Maternity Portraits", "imgs": ["mat17", "mat12"],
              "desc": "Portraits that celebrate the journey to parenthood and the beauty and strength of motherhood, made while you wait for your little one to arrive."},
-            {"id": "children", "name": "Children Portraiture", "imgs": ["ch2", "ch3"],
+            {"id": "children", "name": "Children Portraiture", "imgs": ["kid1", "kid13"],
              "desc": "Portraits that record each stage of a child’s growth. Posing in the studio is made playful, so children enjoy the experience and leave a little more confident."},
-            {"id": "solo", "name": "Solo Portraiture", "imgs": ["so3", "so2"],
+            {"id": "solo", "name": "Solo Portraiture", "imgs": ["solox1", "so3"],
              "desc": "A portrait that celebrates your personality and your moment in time — a record of your own story and character."},
             {"id": "couple", "name": "Couple Portraits", "imgs": ["cp1", "cp2"],
              "desc": "Portraits of the bond between partners: the love, connection and shared moments of your relationship, at any stage of life."},
-            {"id": "family", "name": "Family Portraits", "imgs": ["fam2", "fam4"],
+            {"id": "family", "name": "Family Portraits", "imgs": ["fam8", "fam2"],
              "desc": "Family portraits strengthen bonds and give everyone — especially children — a sense of belonging every time they pass them on the wall."},
-            {"id": "headshots", "name": "Business Headshots", "imgs": [missing("Business headshot sample · 4:5 · min 1600px wide")],
+            {"id": "headshots", "name": "Business Headshots", "imgs": ["hs3", "hs1"],
              "desc": "Professional headshots that convey confidence, competence and approachability, and keep your team’s image consistent across your website, social media and marketing.",
              "points": ["On-location shoots at your office", "Studio sessions with professional lighting and backdrops", "Individual and group packages"]},
             {"id": "inthebox", "name": "In The Box Photography", "imgs": ["box1"],
@@ -123,7 +193,7 @@ SERVICE_GROUPS = [
         "id": "events", "name": "Events",
         "intro": "The studio’s portrait eye, brought to the gatherings that mark family milestones.",
         "services": [
-            {"id": "birthday", "name": "Birthday Events", "imgs": [missing("Birthday event photo · 4:5 · min 1600px wide")],
+            {"id": "birthday", "name": "Birthday Events", "imgs": ["bday2", "bday1"],
              "desc": "Photography coverage of your birthday celebration."},
             {"id": "babyshower", "name": "Baby Shower Events", "imgs": [missing("Baby shower event photo · 4:5 · min 1600px wide")],
              "desc": "Photography coverage of your baby shower."},
@@ -184,6 +254,8 @@ NAV = [("index.html", "Home"), ("about.html", "About"), ("services.html", "Servi
 # helpers
 # --------------------------------------------------------------------------
 def src(stem: str, v: str) -> str:
+    if stem.startswith("assets/"):  # photos supplied directly by the studio, stored in this project
+        return f"{stem}-{v}.jpg"
     return f"{IMG_BASE}{stem}-{v}.jpg"
 
 def dims(v: str) -> tuple[int, int]:
@@ -204,7 +276,7 @@ def img(img_id: str, sizes: str, cls: str = "", eager: bool = False, alt: str | 
     if cls: attrs.append(f'class="{cls}"')
     tag = "<img " + " ".join(attrs) + ">"
     # When photos are served locally and WebP copies exist (tools/fetch-images.sh), offer WebP first.
-    if not IMG_BASE.startswith("http"):
+    if not IMG_BASE.startswith("http") or stem.startswith("assets/"):
         webp = [(src(stem, v).replace(".jpg", ".webp"), dims(v)[0]) for v in sorted(variants, key=lambda v: dims(v)[0])]
         if all((ROOT / u).exists() for u, _ in webp):
             ss = ", ".join(f"{u} {w}w" for u, w in webp)
@@ -324,7 +396,7 @@ def header(active: str) -> str:
 </div>
 """
 
-FOOT_STRIP = ['nb1', 'fam2', 'cp2', 'ch3', 'mat2', 'so3', 'fam4', 'ch2', 'cp1', 'ch4', 'fam5', 'so1']
+FOOT_STRIP = ['nbx7', 'solox1', 'camp4', 'nbx16', 'hs3', 'bday2', 'fam8', 'evt1', 'nb1', 'camp7', 'fam2', 'cp2', 'mat17', 'kid1', 'mat12', 'ch3', 'kid9', 'mat2', 'so3', 'fam4', 'ch2', 'cp1', 'ch4', 'fam5', 'so1']
 
 WA_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm5.8 14.08c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.14-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.25-.27.54-.34.72-.34h.52c.17 0 .39-.06.61.47.24.56.79 1.93.86 2.07.07.14.12.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.12.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></svg>'
 
@@ -463,6 +535,8 @@ WHY = [
 ]
 
 PROJECTS = [  # real photographs from the studio, titled by what they show
+    ("camp7", "Temple of dance", "Campaign", "campaigns"),
+    ("bday2", "Turning four", "Birthday", "events"),
     ("nb1", "A newborn among sunflowers", "Newborn", "newborn"),
     ("fam2", "Silk &amp; celebration", "Family", "family"),
     ("cp2", "Under the full moon", "Couple", "couple"),
@@ -529,7 +603,9 @@ def build_home():
     sizes = ["bcard--wide", "bcard--wide", "", "", "", "bcard--wide", "bcard--wide"]
     for g in SERVICE_GROUPS[1:]:
         for s in g["services"]:
-            bento += f"""<article class="bcard {sizes[k % len(sizes)]} fade-up" style="--d:{k}">
+            ph = next((m for m in s["imgs"] if isinstance(m, str)), None)
+            bg = f'<figure class="bcard__bg" aria-hidden="true">{img(ph, "(max-width: 1000px) 100vw, 50vw", alt="")}</figure>' if ph else ""
+            bento += f"""<article class="bcard {sizes[k % len(sizes)]}{' bcard--photo' if ph else ''} fade-up" style="--d:{k}">{bg}
   <div class="bcard__top"><span class="bcard__tag">{g['name']}</span><span class="bcard__icon">{icon(SVC_ICON.get(s['id'], 'aperture'))}</span></div>
   <div><h3>{s['name']}</h3><p>{e(s['desc'])}</p></div>
   <div class="bcard__acts"><a href="services.html#{s['id']}">Explore</a><a href="contact.html?service={quote(s['name'])}">Book</a></div>
@@ -595,6 +671,25 @@ def build_home():
       <a class="link-arrow" href="services.html#events">View all services</a>
     </div>
     <div class="bento">{bento}</div>
+  </div>
+</section>
+
+<section class="section camp-sec" aria-labelledby="camp-h">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow">Campaigns</span><h2 id="camp-h">Brand &amp; campaign <em>shoots.</em></h2></div>
+      <a class="btn btn--solid" href="portfolio.html#campaigns">View campaigns</a>
+    </div>
+    <div class="camp-grid">
+      <a class="camp camp--a" href="portfolio.html#campaigns"><figure>{img('camp4', '(max-width: 860px) 100vw, 46vw')}</figure></a>
+      <a class="camp camp--b" href="portfolio.html#campaigns"><figure>{img('camp7', '(max-width: 860px) 100vw, 50vw')}</figure></a>
+      <a class="camp camp--c" href="portfolio.html#campaigns"><figure>{img('camp5', '(max-width: 860px) 50vw, 24vw')}</figure></a>
+      <a class="camp camp--d" href="portfolio.html#campaigns"><figure>{img('camp1', '(max-width: 860px) 50vw, 24vw')}</figure></a>
+      <div class="camp-note fade-up">
+        <p>Styled group and brand shoots made in the studio — concept, styling direction, lighting and retouching for your campaign.</p>
+        <a class="link-arrow" href="contact.html?service=Promotional%20Reels">Plan a campaign shoot</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -866,7 +961,8 @@ def build_contact():
 </section>
 <section class="wrap" style="padding-bottom:var(--section)">
   <div class="contact-grid">
-    <form id="enquiry-form" class="form" action="contact.php" method="post" novalidate aria-labelledby="ct-h">
+    <form id="enquiry-form" class="form" name="enquiry" action="/" method="post" data-netlify="true" netlify-honeypot="website" novalidate aria-labelledby="ct-h">
+      <input type="hidden" name="form-name" value="enquiry">
       <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" aria-describedby="e-name" autocomplete="name" required><p class="err" id="e-name"></p></div>
       <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" aria-describedby="e-phone" type="tel" inputmode="tel" autocomplete="tel" required><p class="err" id="e-phone"></p></div>
       <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" aria-describedby="e-email" type="email" autocomplete="email" required><p class="err" id="e-email"></p></div>
